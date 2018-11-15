@@ -1,1 +1,1 @@
-# I practice coding on leetcode and the problems are leveled Medium
+I practice coding on leetcode and the problems are leveled Medium
