@@ -1,6 +1,6 @@
 There are V tasks to do. Some task(s) can begin only after a particular task ends,which we will call precedence relation. A graph indicating precedence relation of tasks is given. In this graph, each task is denoted as vertex, and the precedence relation as directed edge. Note there is no cycle with this graph (cycle refers to a path that starts from one vertex and returns to the same vertex). The graph below is one example of such graph.
 
-![2](D:\1lyx\google_wintercamp\2.png)
+![2](https://github.com/luckyxuanyeah/picture/blob/master/2.png)
 
 In this graph, task 1 can start after task 4 ends and task 6can when task 5 and task 7 end; there is no cycle with this graph. 
 
