@@ -1,0 +1,65 @@
+﻿生成启动时间为 2017/2/7 20:46:38。
+     1>项目“F:\code\sixth\6.4\6.4 4 A1022(30)\6.4 4 A1022(30)\6.4 4 A1022(30).vcxproj”在节点 2 上(Build 个目标)。
+     1>ClCompile:
+         E:\vs2013\VC\bin\CL.exe /c /ZI /nologo /W3 /WX- /sdl /Od /Oy- /D WIN32 /D _DEBUG /D _CONSOLE /D _LIB /D _CRT_SECURE_NO_WARNINGS /D _UNICODE /D UNICODE /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Yu"stdafx.h" /Fp"Debug\6.4 4 A1022(30).pch" /Fo"Debug\\" /Fd"Debug\vc120.pdb" /Gd /TP /analyze- /errorReport:prompt "6.4 4 A1022(30).cpp"
+         6.4 4 A1022(30).cpp
+     1>e:\vs2013\vc\include\xstddef(193): error C2784: “bool std::operator <(const std::tuple<_Types...> &,const std::tuple<_Types1...> &)”: 未能从“const Info”为“const std::tuple<_Types...> &”推导 模板 参数
+                 e:\vs2013\vc\include\tuple(480) : 参见“std::operator <”的声明
+                 e:\vs2013\vc\include\xstddef(192): 编译类 模板 成员函数“bool std::less<_Kty>::operator ()(const _Ty &,const _Ty &) const”时
+                 with
+                 [
+                     _Kty=Info
+         ,            _Ty=Info
+                 ]
+                 e:\vs2013\vc\include\map(228): 参见对正在编译的函数 模板 实例化“bool std::less<_Kty>::operator ()(const _Ty &,const _Ty &) const”的引用
+                 with
+                 [
+                     _Kty=Info
+         ,            _Ty=Info
+                 ]
+                 e:\vs2013\vc\include\type_traits(572): 参见对正在编译的类 模板 实例化“std::less<_Kty>”的引用
+                 with
+                 [
+                     _Kty=Info
+                 ]
+                 e:\vs2013\vc\include\xtree(1023): 参见对正在编译的类 模板 实例化“std::is_empty<std::less<_Kty>>”的引用
+                 with
+                 [
+                     _Kty=Info
+                 ]
+                 e:\vs2013\vc\include\map(70): 参见对正在编译的类 模板 实例化“std::_Tree<std::_Tmap_traits<_Kty,_Ty,_Pr,_Alloc,false>>”的引用
+                 with
+                 [
+                     _Kty=Info
+         ,            _Ty=int
+         ,            _Pr=std::less<Info>
+         ,            _Alloc=std::allocator<std::pair<const Info,int>>
+                 ]
+                 f:\code\sixth\6.4\6.4 4 a1022(30)\6.4 4 a1022(30)\6.4 4 a1022(30).cpp(18): 参见对正在编译的类 模板 实例化“std::map<Info,int,std::less<_Kty>,std::allocator<std::pair<const _Kty,_Ty>>>”的引用
+                 with
+                 [
+                     _Kty=Info
+         ,            _Ty=int
+                 ]
+     1>e:\vs2013\vc\include\xstddef(193): error C2784: “bool std::operator <(const std::_Tree<_Traits> &,const std::_Tree<_Traits> &)”: 未能从“const Info”为“const std::_Tree<_Traits> &”推导 模板 参数
+                 e:\vs2013\vc\include\xtree(2259) : 参见“std::operator <”的声明
+     1>e:\vs2013\vc\include\xstddef(193): error C2784: “bool std::operator <(const std::basic_string<_Elem,_Traits,_Alloc> &,const _Elem *)”: 未能从“const Info”为“const std::basic_string<_Elem,_Traits,_Alloc> &”推导 模板 参数
+                 e:\vs2013\vc\include\xstring(2545) : 参见“std::operator <”的声明
+     1>e:\vs2013\vc\include\xstddef(193): error C2784: “bool std::operator <(const _Elem *,const std::basic_string<_Elem,_Traits,_Alloc> &)”: 未能从“const Info”为“const _Elem *”推导 模板 参数
+                 e:\vs2013\vc\include\xstring(2535) : 参见“std::operator <”的声明
+     1>e:\vs2013\vc\include\xstddef(193): error C2784: “bool std::operator <(const std::basic_string<_Elem,_Traits,_Alloc> &,const std::basic_string<_Elem,_Traits,_Alloc> &)”: 未能从“const Info”为“const std::basic_string<_Elem,_Traits,_Alloc> &”推导 模板 参数
+                 e:\vs2013\vc\include\xstring(2525) : 参见“std::operator <”的声明
+     1>e:\vs2013\vc\include\xstddef(193): error C2784: “bool std::operator <(const std::move_iterator<_RanIt> &,const std::move_iterator<_RanIt2> &)”: 未能从“const Info”为“const std::move_iterator<_RanIt> &”推导 模板 参数
+                 e:\vs2013\vc\include\xutility(1997) : 参见“std::operator <”的声明
+     1>e:\vs2013\vc\include\xstddef(193): error C2784: “bool std::operator <(const std::reverse_iterator<_RanIt> &,const std::reverse_iterator<_RanIt2> &)”: 未能从“const Info”为“const std::reverse_iterator<_RanIt> &”推导 模板 参数
+                 e:\vs2013\vc\include\xutility(1155) : 参见“std::operator <”的声明
+     1>e:\vs2013\vc\include\xstddef(193): error C2784: “bool std::operator <(const std::_Revranit<_RanIt,_Base> &,const std::_Revranit<_RanIt2,_Base2> &)”: 未能从“const Info”为“const std::_Revranit<_RanIt,_Base> &”推导 模板 参数
+                 e:\vs2013\vc\include\xutility(971) : 参见“std::operator <”的声明
+     1>e:\vs2013\vc\include\xstddef(193): error C2784: “bool std::operator <(const std::pair<_Ty1,_Ty2> &,const std::pair<_Ty1,_Ty2> &)”: 未能从“const Info”为“const std::pair<_Ty1,_Ty2> &”推导 模板 参数
+                 e:\vs2013\vc\include\utility(230) : 参见“std::operator <”的声明
+     1>e:\vs2013\vc\include\xstddef(193): error C2676: 二进制“<”:“const Info”不定义该运算符或到预定义运算符可接收的类型的转换
+     1>已完成生成项目“F:\code\sixth\6.4\6.4 4 A1022(30)\6.4 4 A1022(30)\6.4 4 A1022(30).vcxproj”(Build 个目标)的操作 - 失败。
+
+生成失败。
+
+已用时间 00:00:00.54
