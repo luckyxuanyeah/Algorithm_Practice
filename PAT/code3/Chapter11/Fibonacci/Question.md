@@ -1,4 +1,4 @@
-时间限制: 1 Sec  内存限制: 32 MB
+时间限制: 1 Sec  内存限制: 32 MB  
 题目描述  
 The Fibonacci Numbers{0,1,1,2,3,5,8,13,21,34,55...} are defined by the recurrence:   
 F0=0 F1=1 Fn=Fn-1+Fn-2,n>=2  
