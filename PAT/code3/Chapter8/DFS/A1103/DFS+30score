@@ -1,0 +1,59 @@
+#include "iostream"
+#include "vector"
+#include "algorithm"
+using namespace std;
+
+int N, P, K;
+int maxSum = -1;
+vector<int> fac, temp, ans;
+
+int power(int x){
+	int ans = 1;
+	for(int i = 0;i< P;i++){
+		ans *= x;
+	}
+	return ans;
+}
+void init(){
+	int i = 0, temp = 0;
+	while(temp<= N){
+		fac.push_back(temp);
+		temp = power(++i);
+	}
+}
+void DFS(int index, int nowK, int sum, int sumSqu)
+{
+	if (nowK == K && sum == N)
+	{
+		if (sumSqu > maxSum)
+		{
+			maxSum = sumSqu;
+			ans = temp;
+		}
+		return;
+	}
+	if (nowK > K || sum > N)
+		return;
+	if (index - 1 >= 0)
+	{
+		temp.push_back(index);
+		DFS(index, nowK + 1, sum + fac[index], sumSqu + index);
+		temp.pop_back();
+		DFS(index - 1, nowK, sum, sumSqu);
+	}
+}
+int main()
+{
+	scanf("%d%d%d", &N, &K, &P);
+	init();
+	DFS(fac.size()-1, 0, 0, 0); 
+	if (maxSum == -1)
+		printf("Impossible");
+	else
+	{
+		printf("%d = %d^%d", N, ans[0], P);
+		for (int i = 1; i < ans.size();i++)
+			printf(" + %d^%d", ans[i], P);
+	}
+	return 0;
+}
