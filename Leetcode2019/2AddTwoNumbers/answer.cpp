@@ -42,7 +42,7 @@ public:
             pre->next=node;
             pre=node;
         }
-        if(l1==NULL && l2==NULL && temp!=0)
+        if(l1==NULL && l2==NULL && temp!=0)//这里需要注意，一定不要忘记两个数如果一样需要再加上进位呀！！！
         {
             node=new ListNode(temp%10);
             temp=temp/10;
