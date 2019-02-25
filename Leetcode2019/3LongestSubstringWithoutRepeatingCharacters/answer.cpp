@@ -70,3 +70,7 @@ int main()
     printf("%d", num);
     return 0;
 }
+/*Runtime: 32 ms, faster than 65.28% of C++ online submissions for Longest Substring Without Repeating Characters.
+Memory Usage : 15.1 MB, less than 72.71% of C++ online submissions for Longest Substring Without Repeating Characters.
+Next challenges :
+Longest Substring with At Most Two Distinct Characters*/
