@@ -18,7 +18,7 @@ int main()
 		while (1) 
 		{
 			it = find(a.begin(), a.end(), s[i]);//借助algorithm库，在vector子字符串a中查找某个字符是否存在
-			if (it != a.end())//如果迭代器查找到存在，并且不是在子字符串的最后找出来的
+			if (it != a.end())//如果迭代器查找到存在
 			{
 				a.erase(a.begin());//将子字符串中的第一个字符删除，然后继续循环，直到迭代器中找不到，也就是删除了
 				continue;
