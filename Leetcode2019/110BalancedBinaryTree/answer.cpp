@@ -109,3 +109,55 @@ class Solution {
         return level;
     }
 }
+
+//另一种方法 C++
+/**
+ * Definition for a binary tree node.
+ * struct TreeNode {
+ *     int val;
+ *     TreeNode *left;
+ *     TreeNode *right;
+ *     TreeNode(int x) : val(x), left(NULL), right(NULL) {}
+ * };
+ */
+class Solution {
+public:
+    int getNum(TreeNode* root)
+    {
+	    if (root == NULL)
+		    return 0;
+        int level=0;
+        vector<TreeNode*> list;
+        list.push_back(root);
+        int first=0;
+        int last=1;
+        while(first<list.size())
+        {
+            last=list.size();
+            while(first<last)
+            {
+                if(list[first]->left!=NULL)
+                    list.push_back(list[first]->left);
+                if(list[first]->right!=NULL)
+                    list.push_back(list[first]->right);
+                first++;
+            }
+            level++;
+        }
+        return level;
+    }
+    bool isBalanced(TreeNode* root) 
+    {
+        if (root == NULL)
+		    return true;
+	    int distance = getNum(root->left)-getNum(root->right);
+	    if (distance > 1 || distance < -1)
+		    return false;
+	    else
+		    return isBalanced(root->left) && isBalanced(root->right);
+    }
+    
+};
+
+//Runtime: 32 ms, faster than 6.80% of C++ online submissions for Balanced Binary Tree.
+//Memory Usage: 21.1 MB, less than 5.03% of C++ online submissions for Balanced Binary Tree.
