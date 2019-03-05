@@ -28,8 +28,8 @@ int main()
 	node3->next = node4;
 	ListNode* node5 = new ListNode(6);
 	lists[2]->next = node5;
-  int count=0;
-  for(int i=0;i<lists.size();i++)
+        int count=0;
+        for(int i=0;i<lists.size();i++)
         {
             if(lists[i]==NULL)
                 count++;
