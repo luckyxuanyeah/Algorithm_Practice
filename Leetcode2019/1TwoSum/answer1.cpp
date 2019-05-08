@@ -32,4 +32,6 @@ vector<int> twoSum(vector<int>& nums, int target)
 	return ans;
 }
 
-//
+//Runtime: 16 ms, faster than 55% of C++ online submissions for Two Sum.
+//Memory Usage: 10.6 MB, less than 53.10% of C++ online submissions for Two Sum.
+//Next challenges:4Sum  Two Sum II - Input array is sorted  Two Sum III - Data structure design  Subarray Sum Equals K  Two Sum IV - Input is a BST
