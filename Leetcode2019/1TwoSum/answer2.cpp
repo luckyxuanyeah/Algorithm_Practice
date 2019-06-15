@@ -1,3 +1,4 @@
+//20190615记录：这里使用了无序的map，使用无序的map可以进行数字和index的映射，查找的时间复杂度为O(1)，因此整体的时间复杂度为O(n)。
 vector<int> twoSum(vector<int>& nums, int target) {
 	unordered_map<int, int> indices;
 	for (int i = 0; i < nums.size(); i++) {
