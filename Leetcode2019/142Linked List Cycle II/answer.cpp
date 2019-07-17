@@ -34,7 +34,41 @@ ListNode *detectCycle(ListNode *head)
 	}
 	return NULL;
 }
+	
+//ListNode *detectCycle(ListNode *head)
+//{
+//	ListNode* fast = head;
+//	ListNode* slow = head;
+//	bool hasCycle = false;
+//	while (fast != NULL && fast->next!=NULL)
+//	{
+//		fast = fast->next->next;
+//		slow = slow->next;
+//		if (fast == slow)
+//		{
+//			hasCycle = true;
+//			break;
+//		}
+//	}
+//	if (hasCycle==false)
+//		return NULL;
+//	else
+//	{
+//		fast = head;
+//		while (fast != slow)
+//		{
+//			fast = fast->next;
+//			slow = slow->next;
+//		}
+//		return fast;
+//	}
+//}
+
 };
 //Runtime: 12 ms, faster than 99.25% of C++ online submissions for Linked List Cycle II.
 //Memory Usage: 9.8 MB, less than 42.29% of C++ online submissions for Linked List Cycle II.
 //Next challenges:Find the Duplicate Number
+
+//Runtime: 12 ms, faster than 81.95% of C++ online submissions for Linked List Cycle II.
+//Memory Usage: 9.8 MB, less than 56.08% of C++ online submissions for Linked List Cycle II.
+//Next challenges:Merge Sorted Array   Insertion Sort List   Linked List Components
